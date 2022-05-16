@@ -6,9 +6,9 @@ DECLARE	@return_value Int,
 
 EXEC	@return_value = [dbo].[pInserirJogadores]
 		@CodJogadores = @CodJogadores OUTPUT,
-		@NomeJogadores = N'cladudio',
-		@EmailJogadores = N'adaaa@gmail.com',
-		@FoneJogadores = N'2552352'
+		@NomeJogadores = N'teu pai',
+		@EmailJogadores = N'joaoperirer@gmail,com',
+		@FoneJogadores = N'21242423424'
 
 SELECT	@CodJogadores as N'@CodJogadores'
 
