@@ -59,5 +59,28 @@ namespace CrudTimesCS.Properties {
                 resourceCulture = value;
             }
         }
+<<<<<<< HEAD
+=======
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap csgo_700x413 {
+            get {
+                object obj = ResourceManager.GetObject("csgo-700x413", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_counter_strike_global_offensive_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-counter-strike-global-offensive-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
     }
 }

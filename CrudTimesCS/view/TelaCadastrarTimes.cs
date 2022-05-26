@@ -9,7 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CrudTimesCS.model;
 using CrudTimesCS.controller;
+<<<<<<< HEAD
 using System.IO;
+=======
+
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
 
 namespace CrudTimesCS.view
 {
@@ -20,6 +25,7 @@ namespace CrudTimesCS.view
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
         {
             fecharCadastro();
@@ -49,6 +55,28 @@ namespace CrudTimesCS.view
             {
                 limparTela();
                 return;
+=======
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (tbxNomeTimes.Text == "" || tbxFraseTimes.Text == "")
+            {
+                MessageBox.Show("fala algo ai", "atençapo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            time.NomeTimes = tbxNomeTimes.Text;
+            time.FraseTimes = tbxFraseTimes.Text;
+            time.LogoTimes = "C:/";
+
+
+            ManipulaTimes manipulaTimes = new ManipulaTimes();
+            manipulaTimes.cadastrotimes();
+
+            if (time.Retorno == "sim")
+            {
+                limparTela();
+                return;
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
             }
             else
             {
@@ -56,16 +84,28 @@ namespace CrudTimesCS.view
                 return;
             }
 
+<<<<<<< HEAD
         }
         public void abrirCadastro()
         {
             this.ShowDialog();
         }
+=======
+
+        }
+
+        public void abrircadastro()
+        {
+            this.ShowDialog();
+        }
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
         public void fecharCadastro()
         {
             this.Close();
         }
 
+<<<<<<< HEAD
         public void limparTela()
         {
             foreach(Control ctl in this.Controls)
@@ -100,6 +140,39 @@ namespace CrudTimesCS.view
         private void TelaCadastrarTimes_Load(object sender, EventArgs e)
         {
 
+=======
+
+        public void limparTela()
+        {
+            foreach (Control ctl in this.Controls)
+            {
+
+                if (ctl is TextBox)
+                {
+                    ctl.Text = string.Empty;
+
+                }
+
+            }
+
+           
+
+         }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaCadastrarTimes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar ==27)
+            {
+                limparTela();
+            }
+           
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
         }
     }
 }

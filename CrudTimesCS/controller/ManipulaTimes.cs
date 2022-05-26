@@ -1,4 +1,11 @@
 ﻿using System;
+<<<<<<< HEAD
+=======
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
 using System.Data;
 using System.Data.SqlClient;
 using CrudTimesCS.model;
@@ -6,11 +13,19 @@ using System.Windows.Forms;
 using CrudTimesCS.view;
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
 namespace CrudTimesCS.controller
 {
     class ManipulaTimes
     {
+<<<<<<< HEAD
         public void cadastroTimes()
+=======
+        public void cadastrotimes()
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
         {
             SqlConnection cn = new SqlConnection(ConexaoBD.conectar());
             SqlCommand cmd = new SqlCommand("pInserirTimes",cn);
@@ -18,13 +33,21 @@ namespace CrudTimesCS.controller
 
             try
             {
+<<<<<<< HEAD
                 cmd.Parameters.AddWithValue("@NomeTimes", Times.NomeTimes);
                 cmd.Parameters.AddWithValue("@LogoTimes", Times.LogoTimes);
                 cmd.Parameters.AddWithValue("@FraseTimes", Times.FraseTimes);
+=======
+
+                cmd.Parameters.AddWithValue("@NomeTimes", time.NomeTimes);
+                cmd.Parameters.AddWithValue("@LogoTimes", time.LogoTimes);
+                cmd.Parameters.AddWithValue("@FraseTimes", time.FraseTimes);
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
 
                 SqlParameter nv = cmd.Parameters.Add("@CodTimes", SqlDbType.Int);
                 nv.Direction = ParameterDirection.Output;
 
+<<<<<<< HEAD
                 cn.Open();
                 cmd.ExecuteNonQuery();
 
@@ -145,5 +168,36 @@ namespace CrudTimesCS.controller
                 }
             }
         }
+=======
+              cn.Open();
+              cmd.ExecuteNonQuery();
+
+                var resposta = MessageBox.Show("MAEEEEEEEEEEEEAAAA CADASTRO FEITO quer fazer dnv é?","atençao ze ruela",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+
+                if(resposta == DialogResult.Yes)
+                {
+
+                    time.Retorno = "sim";
+                    return;
+
+                }
+                else
+                {
+                    time.Retorno = "nao";
+                    return;
+                }
+
+
+
+
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+
+        }
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
     }
 }

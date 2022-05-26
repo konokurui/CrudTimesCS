@@ -17,14 +17,23 @@ namespace CrudTimesCS.view
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TelaCadastrarTimes telaCadastrar = new TelaCadastrarTimes();
             telaCadastrar.ShowDialog();
+=======
+        private void customizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaCadastrarTimes telaCadastrar = new TelaCadastrarTimes();
+            telaCadastrar.ShowDialog();
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             TelaCadastrarJogadores telaCadastrar = new TelaCadastrarJogadores();
             telaCadastrar.ShowDialog();
         }
@@ -48,5 +57,15 @@ namespace CrudTimesCS.view
 
 
         }
+=======
+            TelaCadastrarJogadores telaCadastrarJogadores = new TelaCadastrarJogadores();
+            telaCadastrarJogadores.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
     }
 }

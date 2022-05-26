@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CrudTimesCS.view;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52afeed9674513930bbcee5945d6c21a38b123c2
 
 namespace CrudTimesCS
 {
