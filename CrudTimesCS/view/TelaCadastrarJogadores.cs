@@ -66,12 +66,35 @@ namespace CrudTimesCS.view
             this.Close();
         }
 
+
+        public void limparTela()
+        {
+            foreach (Control ctl in this.Controls)
+            {
+
+                if (ctl is TextBox)
+                {
+                    ctl.Text = string.Empty;
+
+                }
+
+            }
+
+
+
+        }
+
         private void TelaCadastrarJogadores_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 27)
             {
                 limparTela();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
