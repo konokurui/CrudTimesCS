@@ -2,15 +2,15 @@
 GO
 
 DECLARE	@return_value Int,
-		@CodTimes int
+		@CodJogadores int
 
-EXEC	@return_value = [dbo].[pInserirTimes]
-		@CodTimes = @CodTimes OUTPUT,
-		@NomeTimes = N'TI10',
-		@LogoTimes = N'C:/',
-		@FraseTimes = N'GAroto de programa'
+EXEC	@return_value = [dbo].[pInserirJogadores]
+		@CodJogadores = @CodJogadores OUTPUT,
+		@NomeJogadores = N'aaaa',
+		@EmailJogadores = N'aaaa',
+		@FoneJogadores = N'552452'
 
-SELECT	@CodTimes as N'@CodTimes'
+SELECT	@CodJogadores as N'@CodJogadores'
 
 SELECT	@return_value as 'Return Value'
 

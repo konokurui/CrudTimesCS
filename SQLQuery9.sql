@@ -4,7 +4,7 @@ GO
 DECLARE	@return_value Int
 
 EXEC	@return_value = [dbo].[pDeletarTimes]
-		@CodTimes = 2
+		@CodTimes = 9
 
 SELECT	@return_value as 'Return Value'
 
